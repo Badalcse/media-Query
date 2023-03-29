@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media Query</title>
+    <style>
+.container{
+    flex-direction: row;
+    text-align: center;
+}
+.box-1{
+    height: 200px;
+    width: 300px;
+    border: 2px solid black;
+    margin: 20px;
+    text-align: center;
+    background-color:turquoise;
+}
+@media (max-width: 1440px){
+    .box-1{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.box-2{
+    height: 200px;
+    width: 300px;
+    border: 2px solid black;
+    margin: 20px;
+    align-items: center;
+    background-color: yellowgreen;
+}
+@media (min-width: 1024px){
+    .box-2{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.box-3{
+    height: 150px;
+    width: 250px;
+    border: 2px solid black;
+    margin: 20px;
+    margin-left: 30px;
+    background-color: palegreen;
+}
+@media  (min-width: 768px){
+    .box-3{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.box-4{
+    height: 150px;
+    width: 250px;
+    border: 2px solid black;
+    margin: 20px;
+    margin-left: 30px;
+    background-color: tomato;
+}
+@media  (max-width: 425px){
+    .box-4{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.box-5{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    margin: 20px;
+    margin-left: 90px;
+    background-color: red;
+}
+@media  (max-width: 320px){
+    .box-5{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box-1">box1</div>
+        <div class="box-2">box2</div>
+        <div class="box-3">box3</div>
+        <div class="box-4">box4</div>
+        <div class="box-5">box5</div>
+    </div>
+</body>
+</html>
